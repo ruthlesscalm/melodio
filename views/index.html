@@ -36,14 +36,14 @@
     <main>
         <div class="py-5 flex flex-col gap-4 relative">
             <h2 class="text-white text-[clamp(16px,1.945vw,28px)] font-medium px-[clamp(24px,4vw,76.8px)]">Sad Songs</h2>
-            <div id="mask">
-                <div id="leftArrow" class="absolute left-2 top-1/2 -translate-y-1/2">
-                    <button id="btn-left" class="z-10"><img class="w-8" src="../public/assets/images/leftArrow.svg" alt=""></button>
+            <div class="mask">
+                <div class="absolute left-2 top-1/2 -translate-y-1/2">
+                    <button class="z-10 btn-left"><img class="w-8" src="../public/assets/images/leftArrow.svg" alt=""></button>
                 </div>
-                <div id="rightArrow" class="absolute right-2 top-1/2 -translate-y-1/2">
-                    <button id="btn-right" class="z-10"><img class="w-8" src="../public/assets/images/rightArrow.svg" alt=""></button>
+                <div class="absolute right-2 top-1/2 -translate-y-1/2 right-arrow">
+                    <button class="z-10 btn-right"><img class="w-8" src="../public/assets/images/rightArrow.svg" alt=""></button>
                 </div>
-                <ul class="hide-scrollbar flex gap-5 overflow-y-scroll px-[clamp(24px,4vw,76.8px)]" id="song-list">
+                <ul class="hide-scrollbar flex gap-5 overflow-y-scroll px-[clamp(24px,4vw,76.8px)] song-list">
                     <li class="flex flex-col gap-2 flex-shrink-0 hover:bg-slate-700 rounded-sm">
                         <figure class="p-1">
                             <img class="w-36 rounded-sm" src="../public/assets/images/image.png">
