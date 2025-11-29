@@ -1,0 +1,29 @@
+.list-hover {
+    position: relative;
+}
+
+.list-hover::before,
+.list-hover::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    height: 2px;
+    width: 0;
+    background-color: white;
+    transition: width 0.25s ease-out;
+}
+
+.list-hover::before {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.list-hover::after {
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.list-hover:hover::before,
+.list-hover:hover::after {
+    width: 100%;
+}

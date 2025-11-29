@@ -5,8 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Melodio</title>
     <link rel="stylesheet" href="../public/css/style.css">
+    <link rel="stylesheet" href="../public/css/custom.css">
 </head>
 <body>
-    Hello World
+    <header class="bg-slate-700 text-white flex justify-between items-center px-4 py-1">
+        <div class="flex items-center">
+            <h1 class="text-3xl cursor-pointer">Melodio</h1>
+        </div>
+        <form action="/search" method="GET" class="flex items-center relative rounded-full">
+            <input 
+                id="search"
+                name="search"
+                class="placeholder-inherit rounded-full block px-5 py-1 bg-slate-500"
+                type="text"
+                placeholder="What do you want to Play?"
+            >
+            <button type="submit" class="absolute right-3">
+                <img class="w-6 cursor-pointer" src="/public/assets/images/search.svg">
+            </button>
+        </form>
+        
+        <nav>
+            <ul class="flex gap-4">
+                <li class="list-hover cursor-pointer">Home</li>
+                <li class="list-hover cursor-pointer">About</li>
+                <li><button class="bg-slate-300 text-black px-2 rounded-full hover:scale-105">Login</button></li>
+            </ul>
+        </nav>
+    </header>
 </body>
 </html>
