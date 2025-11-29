@@ -1,0 +1,27 @@
+{
+  "name": "melodio",
+  "version": "1.0.0",
+  "description": "this is a music player",
+  "keywords": [
+    "music",
+    "player"
+  ],
+  "homepage": "https://github.com/ruthlesscalm/melodio#readme",
+  "bugs": {
+    "url": "https://github.com/ruthlesscalm/melodio/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruthlesscalm/melodio.git"
+  },
+  "license": "ISC",
+  "author": "Pavan Gowda S R",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.18"
+  }
+}
