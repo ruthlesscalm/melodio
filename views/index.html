@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../public/css/style.css">
     <link rel="stylesheet" href="../public/css/custom.css">
 </head>
-<body>
+<body class="bg-slate-800">
     <header class="bg-slate-700 text-white flex justify-between items-center px-4 py-1">
         <div class="flex items-center">
             <h1 class="text-3xl cursor-pointer">Melodio</h1>
@@ -33,5 +33,31 @@
             </ul>
         </nav>
     </header>
+    <main>
+        <div class="catagory py-5 flex flex-col gap-4 relative">
+            <h2 class="text-white text-xl font-semibold px-6">Sad Songs</h2>
+            <div id="mask">
+                <div id="leftArrow" class="absolute left-2 top-1/2 -translate-y-1/2">
+                    <button id="btn-left" class="z-10"><img class="w-8" src="../public/assets/images/leftArrow.svg" alt=""></button>
+                </div>
+                <div id="rightArrow" class="absolute right-2 top-1/2 -translate-y-1/2">
+                    <button id="btn-right" class="z-10"><img class="w-8" src="../public/assets/images/rightArrow.svg" alt=""></button>
+                </div>
+                <ul class="hide-scrollbar flex gap-5 overflow-y-scroll px-5" id="song-list">
+                    <li class="flex flex-col gap-2 flex-shrink-0 hover:bg-slate-700 rounded-sm">
+                        <figure class="p-1">
+                            <img class="w-36 rounded-sm" src="../public/assets/images/image.png">
+                        </figure>
+                        <div class="pl-3 pb-2 flex flex-col">
+                            <p class="text-white font-medium">Bargad</p>
+                            <p class="text-slate-300 text-sm">Authors</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <script src="../public/js/index.js"></script>
 </body>
 </html>

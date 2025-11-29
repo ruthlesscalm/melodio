@@ -27,3 +27,46 @@
 .list-hover:hover::after {
     width: 100%;
 }
+
+.hide-scrollbar {
+    /* Firefox */
+    scrollbar-width: none;
+
+    /* Internet Explorer and Edge (legacy) */
+    -ms-overflow-style: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+.fade-left {
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 10%,
+        black 100%
+    );
+    mask-size: 100% 100%;
+}
+
+.fade-both {
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 10%,
+        black 90%,
+        transparent
+    );
+    mask-size: 100% 100%;
+}
+
+.fade-right {
+    mask-image: linear-gradient(
+        to right,
+        black 0%,
+        black 90%,
+        transparent
+    );
+    mask-size: 100% 100%;
+}
