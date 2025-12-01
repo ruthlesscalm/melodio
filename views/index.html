@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Melodio</title>
-    <link rel="stylesheet" href="../public/css/style.css">
-    <link rel="stylesheet" href="../public/css/custom.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/custom.css">
 </head>
 <body class="bg-slate-800">
     <header class="bg-slate-700 text-white flex justify-between items-center px-[clamp(20px,3.33vw,64px)] py-[clamp(8px,0.625vw,12px)]">
@@ -21,7 +21,7 @@
                 placeholder="What do you want to Play?"
             >
             <button type="submit" class="absolute right-[5%]">
-                <img class="w-[clamp(15px,1.667vw,24px)] cursor-pointer" src="/public/assets/images/search.svg">
+                <img class="w-[clamp(15px,1.667vw,24px)] cursor-pointer" src="assets/images/search.svg">
             </button>
         </form>
         
@@ -42,15 +42,15 @@
             <h2 class="text-white text-[clamp(16px,1.945vw,28px)] font-medium px-[clamp(24px,4vw,76.8px)]">Sad Songs</h2>
             <div class="mask">
                 <div class="absolute left-2 top-1/2 -translate-y-1/2">
-                    <button class="z-10 btn-left"><img class="w-8" src="../public/assets/images/leftArrow.svg" alt=""></button>
+                    <button class="z-10 btn-left"><img class="w-8" src="/assets/images/leftArrow.svg" alt="Scroll Left"></button>
                 </div>
                 <div class="absolute right-2 top-1/2 -translate-y-1/2 right-arrow">
-                    <button class="z-10 btn-right"><img class="w-8" src="../public/assets/images/rightArrow.svg" alt=""></button>
+                    <button class="z-10 btn-right"><img class="w-8" src="/assets/images/rightArrow.svg" alt="Scroll Right"></button>
                 </div>
                 <ul class="hide-scrollbar flex gap-5 overflow-y-scroll px-[clamp(24px,4vw,76.8px)] song-list">
                     <li class="flex flex-col gap-2 flex-shrink-0 hover:bg-slate-700 rounded-sm cursor-pointer">
                         <figure class="p-1">
-                            <img class="w-36 rounded-sm" src="../public/assets/images/image.png">
+                            <img class="w-36 rounded-sm" src="/assets/images/image.png">
                         </figure>
                         <div class="pl-3 pb-2 flex flex-col">
                             <p class="text-white text-[clamp(14px,1.5vw,21.5px)]">Bargad</p>
@@ -62,6 +62,6 @@
         </div>
     </main>
 
-    <script src="../public/js/index.js"></script>
+    <script src="/js/index.js"></script>
 </body>
 </html>

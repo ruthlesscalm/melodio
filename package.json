@@ -19,9 +19,18 @@
   "type": "module",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon",
+    "tailwind": "tailwindcss -i ./src/tailwind.css -o ./public/css/style.css --watch",
+    "build": "tailwindcss -i ./src/tailwind.css -o ./public/css/style.css --minify",
+    "start": "node app.js"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.18"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "mongoose": "^9.0.0"
   }
 }
