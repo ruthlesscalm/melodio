@@ -7,7 +7,21 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body class="bg-slate-800">
-
+    <main class="text-white">
+        <div>
+            <h1>Welcome Back</h1>
+            <form action="/request" method="post">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email">
+                <label for="password">Password</label>
+                <input type="text" name="password" id="password" placeholder="Enter your password">
+                <button type="submit">Login</button>
+            </form>
+        </div>
+        <div>
+            <p>New to Melodio.<a href="/register">Sign up here</a></p>
+        </div>
+    </main>
     
 </body>
 </html>
