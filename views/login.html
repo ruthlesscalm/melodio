@@ -7,15 +7,19 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body class="bg-slate-800">
-    <main class="text-white">
-        <div>
-            <h1>Welcome Back</h1>
-            <form action="/request" method="post">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Enter your email">
-                <label for="password">Password</label>
-                <input type="text" name="password" id="password" placeholder="Enter your password">
-                <button type="submit">Login</button>
+    <main class="text-white flex flex-col items-center">
+        <div class="bg-slate-700 px-10 py-10 flex flex-col gap-8">
+            <h1 class="text-[clamp(20px,4.9157vw,56px)] text-center">Welcome Back</h1>
+            <form action="/request" method="post" class="flex flex-col gap-6">
+                <div class="flex flex-col gap-2">
+                    <label for="email">Email</label>
+                    <input class="px-4 py-2 bg-transparent outline-none border border-gray-400 rounded-[4px] focus-visible:border-white" type="email" name="email" id="email" placeholder="Enter your email">
+                </div>
+                <div class="flex flex-col gap-2">
+                    <label for="password">Password</label>
+                    <input class="px-4 py-2 bg-transparent outline-none border border-gray-400 rounded-[4px] focus-visible:border-white" type="text" name="password" id="password" placeholder="Enter your password">
+                </div>
+                <button class="px-4 py-3 bg-cyan-800 rounded-full" type="submit">Login</button>
             </form>
         </div>
         <div>
